@@ -1,4 +1,4 @@
-# Your Project Name Here
+# The Library of Beautiful Things
 
 **HERE IS A GUIDE TO GET YOU STARTED ON YOUR [MAYBE] FIRST REPOSITORY**:
 
