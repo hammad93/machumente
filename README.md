@@ -1,4 +1,4 @@
-# The Library of Beautiful Things
+# Take the Long Way Home
 
 **HERE IS A GUIDE TO GET YOU STARTED ON YOUR [MAYBE] FIRST REPOSITORY**:
 
