@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Interaction01
+  - Interaction02
+  - Interaction03
+  - Interaction04
   layers:
   - Default
   - TransparentFX
