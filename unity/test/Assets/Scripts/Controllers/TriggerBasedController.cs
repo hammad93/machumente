@@ -10,22 +10,41 @@ public class TriggerBasedController : MonoBehaviour
     public AmmoniteAnimation ammoniteAnimation;
     public CloudAnimation cloudAnimation;
     public LampController lampAnimation;
+    private bool ammoniteTriggered = false;
+    private bool cloudTriggered = false;
+    private bool lampTriggered = false;
+
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Interaction01"))
         {
-            ammoniteAnimation.StartAmmoniteAnimation();
+            if (!ammoniteTriggered)
+            {
+                ammoniteAnimation.StartAmmoniteAnimation();
+                ammoniteTriggered=true;
+            }
+            
         }
 
         if (other.CompareTag("Interaction02"))
         {
-            cloudAnimation.StartCloudAnimation();
+            if (cloudTriggered)
+            {
+                cloudAnimation.StartCloudAnimation();
+                cloudTriggered=true;
+            }
+            
         }
 
         if (other.CompareTag("Interaction03"))
         {
-            lampAnimation.StartLampAnimation();
+            if (lampTriggered)
+            {
+                lampAnimation.StartLampAnimation();
+                lampTriggered=true;
+            }
+                
         }
     }
 }
