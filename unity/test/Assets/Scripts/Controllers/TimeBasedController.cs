@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class TimeBasedController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public AmmoniteAnimation ammoniteAnimation;
+    public CloudAnimation cloudAnimation;
+    public LampController lampAnimation;
     void Start()
     {
-        
+        StartCoroutine(BringOnTheAwe());
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    private IEnumerator BringOnTheAwe()
     {
-        
+        yield return new WaitForSeconds(3);
+        ammoniteAnimation.StartAmmoniteAnimation();
+        yield return new WaitForSeconds(10);
+        cloudAnimation.StartCloudAnimation();
+        yield return new WaitForSeconds(15);
+        lampAnimation.StartLampAnimation();
+
+        yield return null;
     }
 }

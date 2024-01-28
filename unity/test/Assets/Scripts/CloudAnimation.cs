@@ -26,7 +26,7 @@ public class CloudAnimation : MonoBehaviour
     public Vector3 rotateEnd = new Vector3(0, 0, 37);
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         redTrafficLight.material.color = redOff;
         amberTrafficLight.material.color = amberOff;
@@ -38,13 +38,16 @@ public class CloudAnimation : MonoBehaviour
         colorAlpha = cloudColor.a;
         
 
+    }
 
+    public void StartCloudAnimation()
+    {
         StartCoroutine(AnimateCloud());
     }
 
     IEnumerator AnimateCloud()
     {
-        yield return new WaitForSeconds(10f);
+        //yield return new WaitForSeconds(10f);
 
         //Traffic light and arrow
         amberTrafficLight.material.color = amberOn;

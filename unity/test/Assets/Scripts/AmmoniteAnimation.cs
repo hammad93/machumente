@@ -32,9 +32,14 @@ public class AmmoniteAnimation : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         ammoniteRenderer.SetBlendShapeWeight(0,0);
+        
+    }
+
+    public void StartAmmoniteAnimation()
+    {
         StartCoroutine(AnimateAmmonite());
     }
 

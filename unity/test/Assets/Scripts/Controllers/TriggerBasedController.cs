@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class TriggerBasedController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //public Collider ammoniteCollider;
+    //public Collider cloudCollider;
+    //public Collider lampCollider;
+    public AmmoniteAnimation ammoniteAnimation;
+    public CloudAnimation cloudAnimation;
+    public LampController lampAnimation;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if(other.CompareTag("Interaction01"))
+        {
+            ammoniteAnimation.StartAmmoniteAnimation();
+        }
+
+        if (other.CompareTag("Interaction02"))
+        {
+            cloudAnimation.StartCloudAnimation();
+        }
+
+        if (other.CompareTag("Interaction03"))
+        {
+            lampAnimation.StartLampAnimation();
+        }
     }
 }
