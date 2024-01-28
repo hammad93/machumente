@@ -17,15 +17,15 @@ public class TimeBasedController : MonoBehaviour
     
     private IEnumerator BringOnTheAwe()
     {
-        yield return new WaitForSeconds(3);
-        ammoniteAnimation.StartAmmoniteAnimation();
-        yield return new WaitForSeconds(10);
-        cloudAnimation.StartCloudAnimation();
-        yield return new WaitForSeconds(10);
-        treeController.StartTreeTalk();
-        yield return new WaitForSeconds(10);
-        lampAnimation.StartLampAnimation();
         yield return new WaitForSeconds(15);
+        ammoniteAnimation.StartAmmoniteAnimation();
+        yield return new WaitForSeconds(15);
+        cloudAnimation.StartCloudAnimation();
+        yield return new WaitForSeconds(15);
+        treeController.StartTreeTalk();
+        yield return new WaitForSeconds(15);
+        lampAnimation.StartLampAnimation();
+        yield return new WaitForSeconds(20);
         windowController.StartWindowAction();
 
         yield return null;
