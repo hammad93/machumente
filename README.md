@@ -39,3 +39,7 @@ Either,
 
 ## Awknowledgements
 Thank you to all of our wonderful mentors in helping us bring our vision to life.
+
+## References
+Please visit this issue page with references. I
+https://codeberg.org/reality-hack-2024/TABLE_87/issues/12
