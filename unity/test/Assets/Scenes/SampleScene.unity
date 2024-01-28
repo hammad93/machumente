@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1522856, g: 0.21076076, b: 0.2789427, a: 1}
+  m_IndirectSpecularColor: {r: 0.20825139, g: 0.20825139, b: 0.20825139, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5224,7 +5224,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8204371881179850711, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
   m_PrefabInstance: {fileID: 1109407790274764219}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1109407790274764223}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
@@ -15586,13 +15586,80 @@ PrefabInstance:
     - {fileID: 8495506645477454422, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
     - {fileID: 6175213767407465855, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8527362242434426454, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1109407790274764224}
   m_SourcePrefab: {fileID: 100100000, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
 --- !u!20 &1109407790274764220 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7025650970629357324, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
   m_PrefabInstance: {fileID: 1109407790274764219}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1109407790274764221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8527362242434426453, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
+  m_PrefabInstance: {fileID: 1109407790274764219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1109407790274764222 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8615559507589991876, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
+  m_PrefabInstance: {fileID: 1109407790274764219}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1109407790274764223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8527362242434426454, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
+  m_PrefabInstance: {fileID: 1109407790274764219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1109407790274764224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109407790274764223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 1109407790274764222}
+  m_MoveSpeed: 1
+  m_EnableStrafe: 1
+  m_EnableFly: 0
+  m_UseGravity: 0
+  m_GravityApplicationMode: 0
+  m_ForwardSource: {fileID: 1109407790274764221}
+  m_LeftHandMoveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 67f57517-8753-4b07-b167-9d211824b228
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_RightHandMoveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Hand Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 56e1ad10-4d1e-4e79-b2f2-3a3a24e3cfa6
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1149012611936736972
 GameObject:
   m_ObjectHideFlags: 0
