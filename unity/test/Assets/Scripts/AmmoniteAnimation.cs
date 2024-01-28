@@ -10,14 +10,15 @@ public class AmmoniteAnimation : MonoBehaviour
     
     public float endX;
     public float endZ;
-    public float time = 0f;
-    public float moveTime = 3f;
+    private float time01 = 0f;
+    private float time02 = 0f;
+    public float moveTime = 5f;
     public float timeStop00 = 0.0f;
-    public float timeStop01 = 0.1f;
-    public float timeStop02 = 0.5f;
-    public float timeStop03 = 0.7f;
-    public float timeStop04 = 0.8f;
-    public float timeStop05 = 1.0f;
+    public float timeStop01 = 0.05f;
+    public float timeStop02 = 0.4f;
+    public float timeStop03 = 0.6f;
+    public float timeStop04 = 0.7f;
+    public float timeStop05 = 0.8f;
     public float blendStop00 = 0.0f;
     public float blendStop01 = 0.0f;
     public float blendStop02 = 90f;
@@ -29,11 +30,13 @@ public class AmmoniteAnimation : MonoBehaviour
     //public Transform targetTransform02;
     public SkinnedMeshRenderer ammoniteRenderer;
     //public float blendWeight;
+    private AudioSource audiosource;
 
 
-    // Start is called before the first frame update
+    
     void Awake()
     {
+        audiosource = GetComponent<AudioSource>();
         ammoniteRenderer.SetBlendShapeWeight(0,0);
         
     }
@@ -51,54 +54,62 @@ public class AmmoniteAnimation : MonoBehaviour
         yield return new WaitForSeconds(2.2f);
 
         transform.DOMoveX(endX, moveTime);
+        audiosource.Play();
 
-        while (time < moveTime)
+        while (time01 < moveTime)
         {
-            while (time < timeStop01)
+            while (time02 < timeStop01)
             {
                 currentBlendWeight = ammoniteRenderer.GetBlendShapeWeight(0);
                 currentBlendWeight += (blendStop01 - blendStop00) / (timeStop01 - timeStop00 ) * Time.deltaTime;
                 ammoniteRenderer.SetBlendShapeWeight(0, currentBlendWeight);
-                time += Time.deltaTime;
+                time01 += Time.deltaTime;
+                time02 += Time.deltaTime;
                 yield return null;
             }
 
-            while (time < timeStop02)
+            while (time02 < timeStop02)
             {
                 currentBlendWeight = ammoniteRenderer.GetBlendShapeWeight(0);
                 currentBlendWeight += (blendStop02 - blendStop01) / (timeStop02  - timeStop01 ) * Time.deltaTime;
                 ammoniteRenderer.SetBlendShapeWeight(0, currentBlendWeight);
-                time += Time.deltaTime;
+                time01 += Time.deltaTime;
+                time02 += Time.deltaTime;
                 yield return null;
             }
 
-            while (time < timeStop03)
+            while (time02 < timeStop03)
             {
                 currentBlendWeight = ammoniteRenderer.GetBlendShapeWeight(0);
                 currentBlendWeight += (blendStop03 - blendStop02) / (timeStop03  - timeStop02 ) * Time.deltaTime;
                 ammoniteRenderer.SetBlendShapeWeight(0, currentBlendWeight);
-                time += Time.deltaTime;
+                time01 += Time.deltaTime;
+                time02 += Time.deltaTime;
                 yield return null;
             }
-            while (time < timeStop04)
+            while (time02 < timeStop04)
             {
                 currentBlendWeight = ammoniteRenderer.GetBlendShapeWeight(0);
                 currentBlendWeight += (blendStop04 - blendStop03) / (timeStop04 - timeStop03 ) * Time.deltaTime;
                 ammoniteRenderer.SetBlendShapeWeight(0, currentBlendWeight);
-                time += Time.deltaTime;
+                time01 += Time.deltaTime;
+                time02 += Time.deltaTime;
                 yield return null;
             }
 
-            while (time < timeStop05)
+            while (time02 < timeStop05)
             {
                 currentBlendWeight = ammoniteRenderer.GetBlendShapeWeight(0);
                 currentBlendWeight += (blendStop05 - blendStop04) / (timeStop05 - timeStop04) * Time.deltaTime;
                 ammoniteRenderer.SetBlendShapeWeight(0, currentBlendWeight);
-                time += Time.deltaTime;
+                time01 += Time.deltaTime;
+                time02 += Time.deltaTime;
                 yield return null;
             }
+            time02 = 0;
             yield return null;
         }
+        audiosource.Stop();
         
     }
 }

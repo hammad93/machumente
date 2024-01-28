@@ -17,7 +17,7 @@ public class TimeBasedController : MonoBehaviour
     
     private IEnumerator BringOnTheAwe()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(20);
         ammoniteAnimation.StartAmmoniteAnimation();
         yield return new WaitForSeconds(15);
         cloudAnimation.StartCloudAnimation();
