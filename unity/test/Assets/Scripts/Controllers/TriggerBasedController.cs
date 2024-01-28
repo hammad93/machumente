@@ -10,9 +10,13 @@ public class TriggerBasedController : MonoBehaviour
     public AmmoniteAnimation ammoniteAnimation;
     public CloudAnimation cloudAnimation;
     public LampController lampAnimation;
+    public WindowController windowController;
+    public TreeController treeController;
     private bool ammoniteTriggered = false;
     private bool cloudTriggered = false;
     private bool lampTriggered = false;
+    private bool windowTriggered = false;
+    private bool treeTriggered = false;
 
 
     private void OnTriggerEnter(Collider other)
@@ -45,6 +49,26 @@ public class TriggerBasedController : MonoBehaviour
                 lampTriggered=true;
             }
                 
+        }
+
+        if (other.CompareTag("Interaction04"))
+        {
+            if (treeTriggered)
+            {
+                treeController.StartTreeTalk();
+                treeTriggered = true;
+            }
+
+        }
+
+        if (other.CompareTag("Interaction05"))
+        {
+            if (windowTriggered)
+            {
+                windowController.StartWindowAction();
+                windowTriggered = true;
+            }
+
         }
     }
 }

@@ -6,7 +6,9 @@ public class TimeBasedController : MonoBehaviour
 {
     public AmmoniteAnimation ammoniteAnimation;
     public CloudAnimation cloudAnimation;
+    public TreeController treeController;
     public LampController lampAnimation;
+    public WindowController windowController;
     void Start()
     {
         StartCoroutine(BringOnTheAwe());
@@ -19,8 +21,12 @@ public class TimeBasedController : MonoBehaviour
         ammoniteAnimation.StartAmmoniteAnimation();
         yield return new WaitForSeconds(10);
         cloudAnimation.StartCloudAnimation();
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(10);
+        treeController.StartTreeTalk();
+        yield return new WaitForSeconds(10);
         lampAnimation.StartLampAnimation();
+        yield return new WaitForSeconds(15);
+        windowController.StartWindowAction();
 
         yield return null;
     }
