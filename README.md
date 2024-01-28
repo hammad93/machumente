@@ -1,56 +1,41 @@
-# Take the Long Way Home
+# the library of beautiful things
+This repository contains code, documentation, and demo's for a compelling VR & MR experience compatible with the Meta Quest 2 and 3.
 
-**HERE IS A GUIDE TO GET YOU STARTED ON YOUR [MAYBE] FIRST REPOSITORY**:
+- MIT Reality Hack 2024
+- Future Constructors: Health & Wellbeing
 
-<https://docs.codeberg.org/getting-started/first-repository/#2.-clone-the-repository>
+## Team 87
 
-Obviously, this is not what your README should say on-submission. Change it. Yes, the whole thing.
+Anne-Isabell de Bokay
+Louise Edwards
+Tamar Haber-Schaim
+Juwon Lee
+Hammad Usmani
 
-This is where a description of your project will go. README.md files support [Markdown syntax](https://www.markdownguide.org/basic-syntax/).
+## Requirements
 
-## Setup
+- Unity Hub (https://unity.com/download)
+- Unity 2022.3.16 (unityhub://2022.3.16f1/d2c21f0ef2f1)
+- Quest Development Mode (https://developer.oculus.com/documentation/native/android/mobile-device-setup/)
 
-**Oh yeah, by the way, don't forget to set up `git lfs` on your machine.**
+## Quickstart
 
-Tell everyone what your project needs in order to run. This might involve many components or software. Maybe some cool libraries?
+1. Run `git clone https://codeberg.org/reality-hack-2024/TABLE_87.git`
+2. Open Unity Hub and select the project contained in the `unity` directory
+3. Connect Quest headset to computer with a data cable
+4. Configure build settings and then `Build and Run`
 
 ### Hardware Required
 
-- Some polyphonic headset on OS version `3.14159265358979323846233832795028841971` with room-temperature hyperconductors
-- Some macrocontroller with specific hardware revision `4.2`
-  - With tank wheels
-- Some computer with a holoported underdisplay cap
-- Some fancy smart device that is worn and knows your favorite toothpaste
+Either,
+
+- Quest 2 or Quest 3
+- Quest Link or Quest compatible USB-C data cable
 
 ### Software Dependencies
 
-- Division Game Engine version `2024.1.26`
-- Michaelsoft Binbows `XD`
+- Linux, Mac, and Windows.
+- Unity 2022.3.16
 
-## Run
-
-1. Open the thing
-   - You know, that thing over there
-     - No, not that one
-     - Go back
-     - Yes, that one
-2. Click the button and type the following text:
-
-```shell
-# install the sotware
-sudo apt install -y cmatrix
-# run the trap
-cmatrix
-```
-
-3. After the process completes and you don't even see the code, anymore, you are ready. Here is what it looks like:
-
-```js
-"b" + "a" + +"a" + "a"; // 'baNaNa'
-```
-
-## Shout-Outs
-
-Or is it "shouts-out?"
-
-We would like to thank our favorite mentor, ece3603a-7f91-4b20-b29f-54a3d0694d0b for all of their hard work. This project would not have been possible without you.
+## Awknowledgements
+Thank you to all of our wonderful mentors in helping us bring our vision to life.
