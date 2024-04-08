@@ -11,7 +11,7 @@ Forked from the project __the library of beautiful things__
 
 ## Quickstart
 
-1. Run `git clone https://codeberg.org/reality-hack-2024/TABLE_87.git`
+1. Run `git clone https://github.com/hammad93/machumente.git`
 2. Open Unity Hub and select the project contained in the `unity` directory
 3. Connect Quest headset to computer with a data cable
 4. Configure build settings and then `Build and Run`
