@@ -1,16 +1,7 @@
-# the library of beautiful things
+# Machu Mente
 This repository contains code, documentation, and demo's for a compelling VR & MR experience compatible with the Meta Quest 2 and 3.
 
-- MIT Reality Hack 2024
-- Future Constructors: Health & Wellbeing
-
-## Team 87
-
-Anne-Isabell de Bokay
-Louise Edwards
-Tamar Haber-Schaim
-Juwon Lee
-Hammad Usmani
+Forked from the project __the library of beautiful things__
 
 ## Requirements
 
@@ -41,5 +32,4 @@ Either,
 Thank you to all of our wonderful mentors in helping us bring our vision to life.
 
 ## References
-Please visit this issue page with references. I
-https://codeberg.org/reality-hack-2024/TABLE_87/issues/12
+https://codeberg.org/reality-hack-2024/TABLE_87/
